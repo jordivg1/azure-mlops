@@ -7,7 +7,8 @@ inputs:
   training_data:
     path: azureml:diabetes-dev-folder:1
   reg_rate: 0.01
-environment: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
+environment: 
+  image: azureml:AzureML-sklearn-0.24-ubuntu18.04-py37-cpu@latest
 compute: azureml:jordi1
 experiment_name: diabetes-mlops
 description: Mlops exercise 1
